@@ -1,7 +1,9 @@
 class Que:
+    next = None
     def __init__(self, data):
         self.data = data
-    next = None
+
+
 
     def isEmpty(self):
         return None
@@ -16,6 +18,7 @@ class Que:
         node_new = Que(val)
         self.next = node_new
     def remove(self):
+        print("removed: ",self.data)
         self = self.next
         return self
 
